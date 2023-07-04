@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     "authentication",
     "debug_toolbar",
     "rest_framework",
-    "import_export"
+    "import_export",
+    "django_extensions",
 ]
 INTERNAL_IPS = ["127.0.0.1", "localhost", "192.168.1.210", "172.105.95.169"]
 MIDDLEWARE = [
