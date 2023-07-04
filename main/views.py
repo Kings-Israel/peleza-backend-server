@@ -789,3 +789,33 @@ def List(request):
     status = request.query_params.get('status')
     module_data=custom_query.request_querry(status,module_code,date_from,date_to,company_id)      
     return JsonResponse(data=module_data,  safe=False)   
+
+class CountriesList(ListAPIView):
+    authentication_classes = []
+    permission_classes = []
+    def get(self, request, *args, **kwargs):
+        countries_query = "SELECT * FROM pel_countries ORDER BY country_name ASC"
+
+        countries = custom_query.custom_sql(countries_query)
+
+        return response.Response(countries)
+    
+class CompaniesList(ListAPIView):
+    authentication_classes = []
+    permission_classes = []
+    def get(self, request, *args, **kwargs):
+        companies_query = "SELECT * FROM pel_client_co"
+
+        companies = custom_query.custom_sql(companies_query)
+
+        return response.Response(companies)
+    
+class IndustriesList(ListAPIView):
+    authentication_classes = []
+    permission_classes = []
+    def get(self, request, *args, **kwargs):
+        industries_query = "SELECT * FROM pel_industries ORDER BY industry_name DESC"
+
+        industries = custom_query.custom_sql(industries_query)
+
+        return response.Response(industries)

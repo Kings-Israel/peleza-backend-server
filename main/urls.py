@@ -50,5 +50,10 @@ urlpatterns = [
         views.download_file
     ),
     
-    
+    path("countries/", views.CountriesList.as_view(),),
+
+    path("companies/", views.CompaniesList.as_view(),),
+
+    path("industries/", views.IndustriesList.as_view(),),
+
 ]
