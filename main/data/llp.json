@@ -1,0 +1,55 @@
+{
+    "status": "ok",
+    "documents": [
+        {
+            "url": "http://brs.pesaflow.com/api/applications/3124895/downloads/business_official_search_cr13",
+            "name": "Business Official CR13",
+            "id": "business_official_search_cr13"
+        }
+    ],
+    "data": {
+        "business": {
+            "verified": true,
+            "status": "registered",
+            "share_capital": [],
+            "registration_number": "LLP-A21P85",
+            "registration_date": "29 November 2018",
+            "postal_address": "52763 - 00100",
+            "physical_address": "Lucy Nyambura ngara , Ngara , Fl: 1st floor , Room/Door: 101, Lucy Nyambura ngara , Ngara ",
+            "phone_number": "+254727477137",
+            "partners": [
+                {
+                    "shares": [],
+                    "name": "BEN SAKWA OKECH",
+                    "id_type": "citizen",
+                    "id_number": "31597553"
+                },
+                {
+                    "shares": [],
+                    "name": "SAMSON GOME ONYANGO",
+                    "id_type": "citizen",
+                    "id_number": "27224128"
+                },
+                {
+                    "shares": [],
+                    "name": "JOSHUA OLUOCH YOGA",
+                    "id_type": "citizen",
+                    "id_number": "29477211"
+                },
+                {
+                    "shares": [],
+                    "name": "JAMES MUNGE WANJOHI",
+                    "id_type": "citizen",
+                    "id_number": "32522649"
+                }
+            ],
+            "kra_pin": "P051874014A",
+            "id": 1602374,
+            "encumberances": [],
+            "email": "jmesswanjohi@gmail.com",
+            "business_name": "EMPIRE DANCE KENYA LLP",
+            "branches": null
+        },
+        "application_ref": "CR13-LLP-WM6513"
+    }
+}

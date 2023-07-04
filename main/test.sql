@@ -1,0 +1,62 @@
+SELECT
+    `pel_psmt_request`.`request_id`,
+    `pel_psmt_request`.`request_plan`,
+    `pel_psmt_request`.`bg_dataset_name`,
+    `pel_psmt_request`.`request_ref_number`,
+    `pel_psmt_request`.`status`,
+    `pel_psmt_request`.`request_payment_ref`,
+    `pel_psmt_request`.`client_id`,
+    `pel_psmt_request`.`request_date`,
+    `pel_psmt_request`.`dataset_citizenship`,
+    `pel_psmt_request`.`request_terms`,
+    `pel_psmt_request`.`package_cost`,
+    `pel_psmt_request`.`request_dataset_cat`,
+    `pel_psmt_request`.`company_name`,
+    `pel_psmt_request`.`client_name`,
+    `pel_psmt_request`.`dataset_kra_pin`,
+    `pel_psmt_request`.`dataset_incorporation_no`,
+    `pel_psmt_request`.`bg_dataset_email`,
+    `pel_psmt_request`.`bg_dataset_mobile`,
+    `pel_psmt_request`.`bg_dataset_idnumber`,
+    `pel_psmt_request`.`user_id`,
+    `pel_psmt_request`.`user_name`,
+    `pel_psmt_request`.`user_lock`,
+    `pel_psmt_request`.`notify_by`,
+    `pel_psmt_request`.`notify_date`,
+    `pel_psmt_request`.`user_lock_date`,
+    `pel_psmt_request`.`file_tracker`,
+    `pel_psmt_request`.`comments`,
+    `pel_psmt_request`.`request_package`,
+    `pel_psmt_request`.`dataset_name`,
+    `pel_psmt_request`.`report_file`,
+    `pel_psmt_request`.`parent_name`,
+    `pel_psmt_request`.`request_type`,
+    `pel_psmt_request`.`dataset_photo`,
+    `pel_psmt_request`.`client_login_id`,
+    `pel_psmt_request`.`progress_calculator`,
+    `pel_psmt_request`.`verified_date`,
+    `pel_psmt_request`.`quotation_by`,
+    `pel_psmt_request`.`quotation_date`,
+    `pel_psmt_request`.`assigned_by`,
+    `pel_psmt_request`.`assigned_date`,
+    `pel_psmt_request`.`status_date`,
+    `pel_psmt_request`.`request_quotation_ref`,
+    `pel_psmt_request`.`request_credit_charged`,
+    `pel_psmt_request`.`package_cost_currency`,
+    `pel_psmt_request`.`verification_status`,
+    `pel_psmt_request`.`verified_by`,
+    `pel_psmt_request`.`adverse_status`,
+    `pel_psmt_request`.`final_notify`,
+    `pel_psmt_request`.`package_id`,
+    `pel_psmt_request`.`callback_url`,
+    `pel_psmt_request`.`registration_number`
+FROM
+    `pel_psmt_request`
+WHERE
+    (
+        `pel_psmt_request`.`client_id` = 2
+        AND `pel_psmt_request`.`client_login_id` = TEST
+    )
+ORDER BY
+    `pel_psmt_request`.`request_id` DESC,
+    `pel_psmt_request`.`bg_dataset_name` ASC

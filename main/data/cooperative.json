@@ -1,0 +1,70 @@
+{
+    "status": "ok",
+    "documents": [
+        {
+            "url": "http://brs.pesaflow.com/api/applications/3124894/downloads/company_search_cr12",
+            "name": "Company Search CR12",
+            "id": "company_search_cr12"
+        }
+    ],
+    "data": {
+        "business": {
+            "verified": false,
+            "status": "registered",
+            "share_capital": [
+                {
+                    "number_of_shares": 1000,
+                    "nominal_value": 100.0,
+                    "name": "ORDINARY"
+                }
+            ],
+            "registration_number": "CPR/2014/173161",
+            "registration_date": "31 December 2014",
+            "postal_address": "180-80105",
+            "physical_address": "LR NO 385/II, KALOLENI-TONONOKA ROAD, KALOLENI",
+            "phone_number": "176604",
+            "partners": [
+                {
+                    "shares": [
+                        {
+                            "number_of_shares": 80,
+                            "name": "ORDINARY"
+                        }
+                    ],
+                    "name": "JUDITH ACHIENG ODHIAMBO",
+                    "id_type": null,
+                    "id_number": null
+                },
+                {
+                    "shares": [
+                        {
+                            "number_of_shares": 0,
+                            "name": "ORDINARY"
+                        }
+                    ],
+                    "name": "VIJAYKUMAR K. PATEL",
+                    "id_type": null,
+                    "id_number": null
+                },
+                {
+                    "shares": [
+                        {
+                            "number_of_shares": 20,
+                            "name": "ORDINARY"
+                        }
+                    ],
+                    "name": "PAUL ASTALKO MULIRO",
+                    "id_type": "citizen",
+                    "id_number": "22850143"
+                }
+            ],
+            "kra_pin": "P051587401F",
+            "id": 1319872,
+            "encumberances": [],
+            "email": "1000 SHARES OF KSHS 100",
+            "business_name": "MUAPA COMPANY LIMITED",
+            "branches": null
+        },
+        "application_ref": "OS-MDFZKJ8"
+    }
+}

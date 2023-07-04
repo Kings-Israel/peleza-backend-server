@@ -1,0 +1,568 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, main, sessions.
+Run 'python manage.py migrate' to apply them.
+December 09, 2021 - 19:35:37
+Django version 3.2.3, using settings 'stanbicApi.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Invalid HTTP_HOST header: 'kyc.pidva.africa'. You may need to add 'kyc.pidva.africa' to ALLOWED_HOSTS.
+Bad Request: /api/auth/login/
+[09/Dec/2021 19:43:05] "POST /api/auth/login/ HTTP/1.0" 400 70161
+Invalid HTTP_HOST header: 'kyc.pidva.africa'. You may need to add 'kyc.pidva.africa' to ALLOWED_HOSTS.
+Bad Request: /api/auth/login/
+[09/Dec/2021 19:43:38] "POST /api/auth/login/ HTTP/1.0" 400 70161
+/opt/ncba-backend/KYC_BACKEND/stanbicApi/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, main, sessions.
+Run 'python manage.py migrate' to apply them.
+December 09, 2021 - 19:47:55
+Django version 3.2.3, using settings 'stanbicApi.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Invalid HTTP_HOST header: 'kyc.pidva.africa'. You may need to add 'kyc.pidva.africa' to ALLOWED_HOSTS.
+Bad Request: /api/auth/login/
+[09/Dec/2021 19:48:05] "POST /api/auth/login/ HTTP/1.0" 400 70139
+Invalid HTTP_HOST header: 'kyc.pidva.africa'. You may need to add 'kyc.pidva.africa' to ALLOWED_HOSTS.
+Bad Request: /api/auth/login/
+[09/Dec/2021 19:48:13] "POST /api/auth/login/ HTTP/1.0" 400 70139
+/opt/ncba-backend/KYC_BACKEND/stanbicApi/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, main, sessions.
+Run 'python manage.py migrate' to apply them.
+December 09, 2021 - 19:48:52
+Django version 3.2.3, using settings 'stanbicApi.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[09/Dec/2021 19:49:31] "POST /api/auth/login/ HTTP/1.0" 200 205
+[09/Dec/2021 19:49:32] "GET /api/stats/ HTTP/1.0" 200 3494
+[09/Dec/2021 20:03:45] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11855
+[09/Dec/2021 20:03:48] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11855
+[09/Dec/2021 20:03:50] "GET /api/stats/ HTTP/1.0" 200 3494
+Forbidden: /api/auth/login/
+[09/Dec/2021 23:55:10] "POST /api/auth/login/ HTTP/1.0" 403 50
+[10/Dec/2021 05:23:05] "POST /api/auth/login/ HTTP/1.0" 200 205
+[10/Dec/2021 05:23:06] "GET /api/stats/ HTTP/1.0" 200 3494
+client_number|company_name|registration_number|dataset_citizenship|Company Type                   
+-------------|------------|-------------------|-------------------|-------------------------------
+A123456M     |Batch Co 3  |PVT-1234567A       |Kenya              |Companies Limitted By Guarantee
+A7654321     |Batch Co 4  |Kvm-123456z        |Kenya              |Trust Search                   
+A123456M
+A7654321
+[10/Dec/2021 05:23:25] "POST /api/fileUp/ HTTP/1.0" 200 10667
+[10/Dec/2021 05:23:32] "GET /api/stats/ HTTP/1.0" 200 3494
+[10/Dec/2021 05:23:49] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11909
+[10/Dec/2021 05:23:53] "GET /api/request/31/POD0-819776U/ HTTP/1.0" 200 410
+[10/Dec/2021 05:23:57] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11909
+[10/Dec/2021 10:21:20] "POST /api/auth/login/ HTTP/1.0" 200 194
+[10/Dec/2021 10:21:21] "GET /api/stats/ HTTP/1.0" 200 74
+client_number|company_name|registration_number|dataset_citizenship|Company Type                   
+-------------|------------|-------------------|-------------------|-------------------------------
+A123456M     |Batch Co 3  |PVT-1234567A       |Kenya              |Companies Limitted By Guarantee
+A7654321     |Batch Co 4  |Kvm-123456z        |Kenya              |Trust Search                   
+A123456M
+A7654321
+[10/Dec/2021 10:21:45] "POST /api/fileUp/ HTTP/1.0" 200 10667
+[10/Dec/2021 10:21:50] "GET /api/stats/ HTTP/1.0" 200 74
+[10/Dec/2021 10:21:54] "GET /api/stats/ HTTP/1.0" 200 74
+Internal Server Error: /api/fileUp/
+Traceback (most recent call last):
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/main/views.py", line 54, in simple_upload
+    imported_data = dataset.load(bulk_request.read(), format='xlsx')
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/tablib/core.py", line 414, in load
+    fmt.import_set(self, stream, **kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/tablib/formats/_xlsx.py", line 82, in import_set
+    xls_book = load_workbook(in_stream, read_only=read_only, data_only=True)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 316, in load_workbook
+    data_only, keep_links)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib64/python3.6/zipfile.py", line 1131, in __init__
+    self._RealGetContents()
+  File "/usr/lib64/python3.6/zipfile.py", line 1198, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[10/Dec/2021 10:22:43] "POST /api/fileUp/ HTTP/1.0" 500 18778
+Internal Server Error: /api/fileUp/
+Traceback (most recent call last):
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/main/views.py", line 54, in simple_upload
+    imported_data = dataset.load(bulk_request.read(), format='xlsx')
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/tablib/core.py", line 414, in load
+    fmt.import_set(self, stream, **kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/tablib/formats/_xlsx.py", line 82, in import_set
+    xls_book = load_workbook(in_stream, read_only=read_only, data_only=True)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 316, in load_workbook
+    data_only, keep_links)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib64/python3.6/zipfile.py", line 1131, in __init__
+    self._RealGetContents()
+  File "/usr/lib64/python3.6/zipfile.py", line 1198, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[10/Dec/2021 10:23:00] "POST /api/fileUp/ HTTP/1.0" 500 18778
+[10/Dec/2021 10:23:02] "GET /api/stats/ HTTP/1.0" 200 74
+client_number|company_name|registration_number|dataset_citizenship|Company Type                   
+-------------|------------|-------------------|-------------------|-------------------------------
+A123456M     |Batch Co 3  |PVT-1234567A       |Kenya              |Companies Limitted By Guarantee
+A7654321     |Batch Co 4  |Kvm-123456z        |Kenya              |Trust Search                   
+A123456M
+A7654321
+[10/Dec/2021 10:23:18] "POST /api/fileUp/ HTTP/1.0" 200 10667
+[10/Dec/2021 10:23:22] "GET /api/stats/ HTTP/1.0" 200 74
+[10/Dec/2021 10:23:59] "GET /api/requests/?page=1&q=mine&status=false HTTP/1.0" 200 84
+[10/Dec/2021 10:25:25] "GET /api/stats/ HTTP/1.0" 200 74
+[10/Dec/2021 10:25:31] "GET /api/stats/ HTTP/1.0" 200 74
+[10/Dec/2021 10:25:41] "GET /api/stats/ HTTP/1.0" 200 74
+Forbidden: /api/auth/login/
+[10/Dec/2021 10:26:54] "POST /api/auth/login/ HTTP/1.0" 403 50
+[10/Dec/2021 10:26:57] "POST /api/auth/login/ HTTP/1.0" 200 205
+[10/Dec/2021 10:26:58] "GET /api/stats/ HTTP/1.0" 200 3494
+Internal Server Error: /api/fileUp/
+Traceback (most recent call last):
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/main/views.py", line 54, in simple_upload
+    imported_data = dataset.load(bulk_request.read(), format='xlsx')
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/tablib/core.py", line 414, in load
+    fmt.import_set(self, stream, **kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/tablib/formats/_xlsx.py", line 82, in import_set
+    xls_book = load_workbook(in_stream, read_only=read_only, data_only=True)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 316, in load_workbook
+    data_only, keep_links)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib64/python3.6/zipfile.py", line 1131, in __init__
+    self._RealGetContents()
+  File "/usr/lib64/python3.6/zipfile.py", line 1198, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[10/Dec/2021 10:27:02] "POST /api/fileUp/ HTTP/1.0" 500 18778
+[10/Dec/2021 10:27:10] "GET /api/stats/ HTTP/1.0" 200 74
+client_number|company_name|registration_number|dataset_citizenship|Company Type|None|KEY                          |None        
+-------------|------------|-------------------|-------------------|------------|----|-----------------------------|------------
+A123456M     |Batch Co 3  |PVT-1234567A       |Kenya              |CLG         |None|COMPANY NAME                 |COMPANY TYPE
+A7654321     |Batch Co 4  |Kvm-123456z        |Kenya              |TR          |None|Company                      |CO          
+None         |None        |None               |None               |None        |None|Business                     |BN          
+None         |None        |None               |None               |None        |None|Societies                    |SOC         
+None         |None        |None               |None               |None        |None|Community Based Organisation |CBO         
+None         |None        |None               |None               |None        |None|Trusts                       |TR          
+None         |None        |None               |None               |None        |None|International Company        |ICO         
+None         |None        |None               |None               |None        |None|Cooperative Sacco            |SACCO       
+None         |None        |None               |None               |None        |None|Limited Liability Patnerships|LLP         
+None         |None        |None               |None               |None        |None|Company Limited by Guarantee |CLG         
+None         |None        |None               |None               |None        |None|Ngo search                   |NGO         
+A123456M
+A7654321
+None
+None
+None
+None
+None
+None
+None
+None
+None
+[10/Dec/2021 10:27:11] "POST /api/fileUp/ HTTP/1.0" 200 10669
+[10/Dec/2021 10:27:16] "GET /api/stats/ HTTP/1.0" 200 3494
+[10/Dec/2021 10:27:21] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11668
+Internal Server Error: /api/fileUp/
+Traceback (most recent call last):
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/main/views.py", line 54, in simple_upload
+    imported_data = dataset.load(bulk_request.read(), format='xlsx')
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/tablib/core.py", line 414, in load
+    fmt.import_set(self, stream, **kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/tablib/formats/_xlsx.py", line 82, in import_set
+    xls_book = load_workbook(in_stream, read_only=read_only, data_only=True)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 316, in load_workbook
+    data_only, keep_links)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib64/python3.6/zipfile.py", line 1131, in __init__
+    self._RealGetContents()
+  File "/usr/lib64/python3.6/zipfile.py", line 1198, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[10/Dec/2021 10:27:27] "POST /api/fileUp/ HTTP/1.0" 500 18778
+[10/Dec/2021 10:27:39] "GET /api/stats/ HTTP/1.0" 200 74
+client_number|company_name|registration_number|dataset_citizenship|Company Type                   
+-------------|------------|-------------------|-------------------|-------------------------------
+A123456M     |Batch Co 3  |PVT-1234567A       |Kenya              |Companies Limitted By Guarantee
+A7654321     |Batch Co 4  |Kvm-123456z        |Kenya              |Trust Search                   
+A123456M
+A7654321
+[10/Dec/2021 10:28:12] "POST /api/fileUp/ HTTP/1.0" 200 10667
+[10/Dec/2021 10:28:25] "GET /api/stats/ HTTP/1.0" 200 74
+Internal Server Error: /api/fileUp/
+Traceback (most recent call last):
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/main/views.py", line 54, in simple_upload
+    imported_data = dataset.load(bulk_request.read(), format='xlsx')
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/tablib/core.py", line 414, in load
+    fmt.import_set(self, stream, **kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/tablib/formats/_xlsx.py", line 82, in import_set
+    xls_book = load_workbook(in_stream, read_only=read_only, data_only=True)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 316, in load_workbook
+    data_only, keep_links)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib64/python3.6/zipfile.py", line 1131, in __init__
+    self._RealGetContents()
+  File "/usr/lib64/python3.6/zipfile.py", line 1198, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[10/Dec/2021 10:28:49] "POST /api/fileUp/ HTTP/1.0" 500 18778
+[10/Dec/2021 10:29:08] "GET /api/stats/ HTTP/1.0" 200 74
+[10/Dec/2021 10:30:32] "GET /api/stats/ HTTP/1.0" 200 74
+client_number|company_name|registration_number|dataset_citizenship|Kyc_Type|None|KEY    |None                         
+-------------|------------|-------------------|-------------------|--------|----|-------|-----------------------------
+A123456M     |Batch Co 3  |PVT-1234567A       |Kenya              |CLG     |None|Kyc_Tpe|Kyc Type NAME                
+A7654321     |Batch Co 4  |Kvm-123456z        |Kenya              |TR      |None|CO     |Company                      
+None         |None        |None               |None               |None    |None|BN     |Business                     
+None         |None        |None               |None               |None    |None|SOC    |Societies                    
+None         |None        |None               |None               |None    |None|CBO    |Community Based Organisation 
+None         |None        |None               |None               |None    |None|TR     |Trusts                       
+None         |None        |None               |None               |None    |None|ICO    |International Company        
+None         |None        |None               |None               |None    |None|SACCO  |Cooperative Sacco            
+None         |None        |None               |None               |None    |None|LLP    |Limited Liability Patnerships
+None         |None        |None               |None               |None    |None|CLG    |Company Limited by Guarantee 
+None         |None        |None               |None               |None    |None|NGO    |Ngo search                   
+A123456M
+A7654321
+None
+None
+None
+None
+None
+None
+None
+None
+None
+[10/Dec/2021 10:54:42] "POST /api/fileUp/ HTTP/1.0" 200 10669
+[10/Dec/2021 10:54:48] "GET /api/stats/ HTTP/1.0" 200 74
+[10/Dec/2021 10:55:18] "GET /api/requests/?page=1&q=mine&status=false HTTP/1.0" 200 84
+Forbidden: /api/requests/
+[10/Dec/2021 10:55:36] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 403 74
+[10/Dec/2021 10:55:50] "POST /api/auth/login/ HTTP/1.0" 200 205
+[10/Dec/2021 10:55:51] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11091
+client_number|company_name|registration_number|dataset_citizenship|Company Type                   
+-------------|------------|-------------------|-------------------|-------------------------------
+A123456M     |Batch Co 3  |PVT-1234567A       |Kenya              |Companies Limitted By Guarantee
+A7654321     |Batch Co 4  |Kvm-123456z        |Kenya              |Trust Search                   
+A123456M
+A7654321
+[10/Dec/2021 10:56:07] "POST /api/fileUp/ HTTP/1.0" 200 10667
+[10/Dec/2021 10:56:12] "GET /api/stats/ HTTP/1.0" 200 3494
+[10/Dec/2021 10:56:20] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11165
+[10/Dec/2021 10:56:26] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11165
+[10/Dec/2021 10:56:59] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11165
+[10/Dec/2021 10:57:02] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11165
+client_number|company_name|registration_number|dataset_citizenship|Company Type                   
+-------------|------------|-------------------|-------------------|-------------------------------
+A123456M     |Batch Co 3  |PVT-1234567A       |Kenya              |Companies Limitted By Guarantee
+A7654321     |Batch Co 4  |Kvm-123456z        |Kenya              |Trust Search                   
+A123456M
+A7654321
+[10/Dec/2021 10:57:13] "POST /api/fileUp/ HTTP/1.0" 200 10667
+[10/Dec/2021 10:57:17] "GET /api/stats/ HTTP/1.0" 200 3494
+[10/Dec/2021 10:57:32] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11239
+client_number|company_name|registration_number|dataset_citizenship|Company Type                   
+-------------|------------|-------------------|-------------------|-------------------------------
+A123456M     |Batch Co 3  |PVT-1234567A       |Kenya              |Companies Limitted By Guarantee
+A7654321     |Batch Co 4  |Kvm-123456z        |Kenya              |Trust Search                   
+A123456M
+A7654321
+[10/Dec/2021 10:59:51] "POST /api/fileUp/ HTTP/1.0" 200 10668
+Forbidden: /api/stats/
+[10/Dec/2021 10:59:55] "GET /api/stats/ HTTP/1.0" 403 74
+[10/Dec/2021 11:00:15] "POST /api/auth/login/ HTTP/1.0" 200 205
+[10/Dec/2021 11:00:17] "GET /api/stats/ HTTP/1.0" 200 3494
+[10/Dec/2021 11:00:19] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11368
+[10/Dec/2021 11:03:58] "GET /api/stats/ HTTP/1.0" 200 3494
+[10/Dec/2021 11:11:39] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11368
+[10/Dec/2021 11:12:00] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11368
+[10/Dec/2021 11:12:05] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11368
+[10/Dec/2021 11:16:03] "GET /api/stats/ HTTP/1.0" 200 3494
+[10/Dec/2021 11:16:06] "GET /api/requests/?page=1&q=mine&status=false HTTP/1.0" 200 11369
+[10/Dec/2021 11:16:15] "GET /api/requests/?page=1&q=mine&status=false HTTP/1.0" 200 11369
+[10/Dec/2021 11:16:28] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11368
+[10/Dec/2021 11:20:57] "GET /api/stats/ HTTP/1.0" 200 3494
+[10/Dec/2021 11:53:57] "GET /api/requests/?page=1&q=mine&status=false HTTP/1.0" 200 84
+[10/Dec/2021 11:54:00] "GET /api/stats/ HTTP/1.0" 200 74
+[10/Dec/2021 11:54:05] "GET /api/stats/ HTTP/1.0" 200 74
+[10/Dec/2021 12:40:45] "GET /api/stats/ HTTP/1.0" 200 74
+[10/Dec/2021 14:41:04] "POST /api/auth/login/ HTTP/1.0" 200 194
+[10/Dec/2021 14:41:06] "GET /api/stats/ HTTP/1.0" 200 74
+[10/Dec/2021 14:51:04] "POST /api/request/ HTTP/1.0" 201 202
+Not Found: /api/business/search/
+[10/Dec/2021 14:51:05] "POST /api/business/search/ HTTP/1.1" 404 13404
+Internal Server Error: /api/fileUp/
+Traceback (most recent call last):
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/main/views.py", line 54, in simple_upload
+    imported_data = dataset.load(bulk_request.read(), format='xlsx')
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/tablib/core.py", line 414, in load
+    fmt.import_set(self, stream, **kwargs)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/tablib/formats/_xlsx.py", line 82, in import_set
+    xls_book = load_workbook(in_stream, read_only=read_only, data_only=True)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 316, in load_workbook
+    data_only, keep_links)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/opt/ncba-backend/KYC_BACKEND/python3-virtualenv/lib64/python3.6/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib64/python3.6/zipfile.py", line 1131, in __init__
+    self._RealGetContents()
+  File "/usr/lib64/python3.6/zipfile.py", line 1198, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[10/Dec/2021 14:52:16] "POST /api/fileUp/ HTTP/1.0" 500 18778
+client_number|company_name|registration_number|dataset_citizenship|Kyc_Type|None|KEY    |None                         
+-------------|------------|-------------------|-------------------|--------|----|-------|-----------------------------
+A123456M     |Batch Co 3  |PVT-1234567A       |Kenya              |CLG     |None|Kyc_Tpe|Kyc Type NAME                
+A7654321     |Batch Co 4  |Kvm-123456z        |Kenya              |TR      |None|CO     |Company                      
+None         |None        |None               |None               |None    |None|BN     |Business                     
+None         |None        |None               |None               |None    |None|SOC    |Societies                    
+None         |None        |None               |None               |None    |None|CBO    |Community Based Organisation 
+None         |None        |None               |None               |None    |None|TR     |Trusts                       
+None         |None        |None               |None               |None    |None|ICO    |International Company        
+None         |None        |None               |None               |None    |None|SACCO  |Cooperative Sacco            
+None         |None        |None               |None               |None    |None|LLP    |Limited Liability Patnerships
+None         |None        |None               |None               |None    |None|CLG    |Company Limited by Guarantee 
+None         |None        |None               |None               |None    |None|NGO    |Ngo search                   
+A123456M
+A7654321
+None
+None
+None
+None
+None
+None
+None
+None
+None
+[10/Dec/2021 14:53:20] "POST /api/fileUp/ HTTP/1.0" 200 10671
+[10/Dec/2021 14:53:29] "GET /api/stats/ HTTP/1.0" 200 405
+[10/Dec/2021 14:54:21] "GET /api/requests/?page=1&q=mine&status=false HTTP/1.0" 200 415
+[10/Dec/2021 14:55:09] "GET /api/stats/ HTTP/1.0" 200 405
+[10/Dec/2021 14:55:16] "GET /api/stats/ HTTP/1.0" 200 405
+[10/Dec/2021 15:58:44] "GET /api/stats/ HTTP/1.0" 200 405
+[10/Dec/2021 15:59:01] "POST /api/auth/login/ HTTP/1.0" 200 194
+[10/Dec/2021 15:59:02] "GET /api/stats/ HTTP/1.0" 200 405
+client_number|company_name|registration_number|dataset_citizenship|Kyc_Type|None|KEY    |None                         
+-------------|------------|-------------------|-------------------|--------|----|-------|-----------------------------
+A123456M     |Batch Co 3  |PVT-1234567A       |Kenya              |CLG     |None|Kyc_Tpe|Kyc Type NAME                
+A7654321     |Batch Co 4  |Kvm-123456z        |Kenya              |TR      |None|CO     |Company                      
+None         |None        |None               |None               |None    |None|BN     |Business                     
+None         |None        |None               |None               |None    |None|SOC    |Societies                    
+None         |None        |None               |None               |None    |None|CBO    |Community Based Organisation 
+None         |None        |None               |None               |None    |None|TR     |Trusts                       
+None         |None        |None               |None               |None    |None|ICO    |International Company        
+None         |None        |None               |None               |None    |None|SACCO  |Cooperative Sacco            
+None         |None        |None               |None               |None    |None|LLP    |Limited Liability Patnerships
+None         |None        |None               |None               |None    |None|CLG    |Company Limited by Guarantee 
+None         |None        |None               |None               |None    |None|NGO    |Ngo search                   
+A123456M
+A7654321
+None
+None
+None
+None
+None
+None
+None
+None
+None
+[10/Dec/2021 16:00:49] "POST /api/fileUp/ HTTP/1.0" 200 10671
+[10/Dec/2021 16:00:54] "GET /api/stats/ HTTP/1.0" 200 405
+[10/Dec/2021 16:00:58] "GET /api/stats/ HTTP/1.0" 200 405
+client_number|company_name|registration_number|dataset_citizenship|Kyc_Type|None|KEY    |None                         
+-------------|------------|-------------------|-------------------|--------|----|-------|-----------------------------
+A123456M     |Batch Co 3  |PVT-1234567A       |Kenya              |CLG     |None|Kyc_Tpe|Kyc Type NAME                
+A7654321     |Batch Co 4  |Kvm-123456z        |Kenya              |TR      |None|CO     |Company                      
+None         |None        |None               |None               |None    |None|BN     |Business                     
+None         |None        |None               |None               |None    |None|SOC    |Societies                    
+None         |None        |None               |None               |None    |None|CBO    |Community Based Organisation 
+None         |None        |None               |None               |None    |None|TR     |Trusts                       
+None         |None        |None               |None               |None    |None|ICO    |International Company        
+None         |None        |None               |None               |None    |None|SACCO  |Cooperative Sacco            
+None         |None        |None               |None               |None    |None|LLP    |Limited Liability Patnerships
+None         |None        |None               |None               |None    |None|CLG    |Company Limited by Guarantee 
+None         |None        |None               |None               |None    |None|NGO    |Ngo search                   
+A123456M
+A7654321
+None
+None
+None
+None
+None
+None
+None
+None
+None
+[10/Dec/2021 16:01:21] "POST /api/fileUp/ HTTP/1.0" 200 10671
+[10/Dec/2021 16:01:27] "GET /api/stats/ HTTP/1.0" 200 405
+[10/Dec/2021 18:04:20] "POST /api/auth/login/ HTTP/1.0" 200 205
+[10/Dec/2021 18:04:22] "GET /api/stats/ HTTP/1.0" 200 3484
+[10/Dec/2021 18:08:07] "POST /api/auth/login/ HTTP/1.0" 200 205
+[10/Dec/2021 18:08:09] "GET /api/stats/ HTTP/1.0" 200 3484
+[10/Dec/2021 18:09:34] "GET /api/stats/ HTTP/1.0" 200 3484
+[10/Dec/2021 18:15:46] "GET /api/stats/ HTTP/1.0" 200 3484
+[10/Dec/2021 18:15:48] "POST /api/auth/login/ HTTP/1.0" 200 194
+[10/Dec/2021 18:15:49] "GET /api/stats/ HTTP/1.0" 200 405
+Forbidden: /api/auth/login/
+[10/Dec/2021 18:16:13] "POST /api/auth/login/ HTTP/1.0" 403 50
+[10/Dec/2021 18:16:20] "POST /api/auth/login/ HTTP/1.0" 200 205
+[10/Dec/2021 18:16:22] "GET /api/stats/ HTTP/1.0" 200 3484
+[10/Dec/2021 18:16:37] "GET /api/stats/ HTTP/1.0" 200 3484
+client_number|company_name|registration_number|country|kyc_type
+-------------|------------|-------------------|-------|--------
+A12345       |ABC Ltd     |PVT-1234567A       |Kenya  |CO      
+B234567      |XYZ Hardware|BN-123456          |Kenya  |BN      
+C34567Z      |EFG Sacco   |123456             |Kenya  |sacco   
+A12345
+B234567
+C34567Z
+[10/Dec/2021 18:18:57] "POST /api/fileUp/ HTTP/1.0" 200 10668
+[10/Dec/2021 18:19:05] "GET /api/stats/ HTTP/1.0" 200 405
+[10/Dec/2021 18:19:08] "GET /api/stats/ HTTP/1.0" 200 405
+client_number|company_name|registration_number|country|kyc_type
+-------------|------------|-------------------|-------|--------
+A12345       |ABC Ltd     |PVT-1234567A       |Kenya  |CO      
+B234567      |XYZ Hardware|BN-123456          |Kenya  |BN      
+C34567Z      |EFG Sacco   |123456             |Kenya  |sacco   
+A12345
+B234567
+C34567Z
+[10/Dec/2021 18:19:42] "POST /api/fileUp/ HTTP/1.0" 200 10668
+[10/Dec/2021 18:19:47] "GET /api/stats/ HTTP/1.0" 200 405
+[10/Dec/2021 18:19:54] "GET /api/requests/?page=1&q=mine&status=false HTTP/1.0" 200 415
+[10/Dec/2021 18:19:56] "GET /api/requests/?page=1&q=mine&status=false HTTP/1.0" 200 415
+[10/Dec/2021 18:20:04] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 415
+[10/Dec/2021 18:20:05] "GET /api/requests/?page=1&q=mine&status=false HTTP/1.0" 200 415
+client_number|company_name|registration_number|country|kyc_type
+-------------|------------|-------------------|-------|--------
+A12345       |ABC Ltd     |PVT-1234567A       |Kenya  |CO      
+B234567      |XYZ Hardware|BN-123456          |Kenya  |BN      
+C34567Z      |EFG Sacco   |123456             |Kenya  |sacco   
+A12345
+B234567
+C34567Z
+[10/Dec/2021 18:21:26] "POST /api/fileUp/ HTTP/1.0" 200 10668
+[10/Dec/2021 18:21:31] "GET /api/stats/ HTTP/1.0" 200 405
+[10/Dec/2021 18:21:36] "GET /api/stats/ HTTP/1.0" 200 405
+[10/Dec/2021 18:21:37] "GET /api/requests/?page=1&q=mine&status=false HTTP/1.0" 200 415
+[10/Dec/2021 18:21:39] "GET /api/requests/?page=1&q=mine&status=false HTTP/1.0" 200 415
+[10/Dec/2021 18:21:42] "GET /api/stats/ HTTP/1.0" 200 405
+[10/Dec/2021 18:22:01] "POST /api/auth/login/ HTTP/1.0" 200 205
+[10/Dec/2021 18:22:04] "GET /api/stats/ HTTP/1.0" 200 3484
+client_number|company_name|registration_number|country|kyc_type
+-------------|------------|-------------------|-------|--------
+A12345       |ABC Ltd     |PVT-1234567A       |Kenya  |CO      
+B234567      |XYZ Hardware|BN-123456          |Kenya  |BN      
+C34567Z      |EFG Sacco   |123456             |Kenya  |sacco   
+A12345
+B234567
+C34567Z
+[10/Dec/2021 18:22:22] "POST /api/fileUp/ HTTP/1.0" 200 10668
+[10/Dec/2021 18:22:27] "GET /api/stats/ HTTP/1.0" 200 3484
+[10/Dec/2021 18:22:33] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11108
+[10/Dec/2021 18:24:11] "GET /api/stats/ HTTP/1.0" 200 3484
+Forbidden: /api/stats/
+[10/Dec/2021 18:24:33] "GET /api/stats/ HTTP/1.0" 403 74
+[10/Dec/2021 18:24:41] "GET /api/request/38/FUJ2-937661A/ HTTP/1.0" 200 430
+[10/Dec/2021 18:24:45] "GET /api/stats/ HTTP/1.0" 200 3484
+[10/Dec/2021 18:26:20] "GET /api/requests/?page=1&q=all&status=false HTTP/1.0" 200 11108
+[10/Dec/2021 18:26:31] "GET /api/stats/ HTTP/1.0" 200 3484
+[10/Dec/2021 18:27:01] "GET /api/stats/ HTTP/1.0" 200 3484
+[10/Dec/2021 18:27:17] "GET /api/requests/?page=1&q=mine&status=false HTTP/1.0" 200 11109
+[10/Dec/2021 18:27:21] "GET /api/stats/ HTTP/1.0" 200 3484
+/opt/ncba-backend/KYC_BACKEND/stanbicApi/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, main, sessions.
+Run 'python manage.py migrate' to apply them.
+December 12, 2021 - 08:22:11
+Django version 3.2.3, using settings 'stanbicApi.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/opt/ncba-backend/KYC_BACKEND/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, main, sessions.
+Run 'python manage.py migrate' to apply them.
+December 12, 2021 - 08:25:17
+Django version 3.2.3, using settings 'stanbicApi.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/opt/ncba-backend/KYC_BACKEND/stanbicApi/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, main, sessions.
+Run 'python manage.py migrate' to apply them.
+December 12, 2021 - 08:25:54
+Django version 3.2.3, using settings 'stanbicApi.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
